@@ -5,8 +5,8 @@ const CharacterListItem = (props) => {
     return (
         <tr>
             <td className="col-md-3">{props.name}</td>
-            <td className="col-md-3">{props.job}</td>
-            <td className="col-md-3">{props.level}</td>
+            <td className="col-md-2">{props.job}</td>
+            <td className="col-md-1">{props.level}</td>
             <td className="col-md-3">{props.player}</td>
             <td className="col-md-3 btn-toolbar">
                 <Link to={`/characters/${props.id}/items`}>
@@ -46,10 +46,10 @@ const CharacterList = (props) => {
             <table className="table table-hover">
                 <thead>
                     <tr>
-                        <th className="col-md-3">Character Name</th>
-                        <th className="col-md-3">Job Title</th>
-                        <th className="col-md-3">Character Level</th>
-                        <th className="col-md-3">Player Name</th>
+                        <th className="col-md-2">Character Name</th>
+                        <th className="col-md-2">Job Title</th>
+                        <th className="col-md-1">Character Level</th>
+                        <th className="col-md-2">Player Name</th>
                         <th className="col-md-3">Actions</th>
                     </tr>
                 </thead>

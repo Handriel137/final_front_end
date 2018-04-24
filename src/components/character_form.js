@@ -74,11 +74,11 @@ class CharacterForm extends React.Component {
                 <h1> Characters </h1>
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                        <label>First Name</label>
+                        <label>Character Name</label>
                         <input type="text" className="form-control" autoComplete='character-name' name="name" id="name" placeholder="First Name" value={this.state.name} onChange={this.handleInputChange} />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="job">Last Name</label>
+                        <label htmlFor="job">Class Name</label>
                         <input type="text" className="form-control" autoComplete='job-name' name="job" id="job" placeholder="Last Name" value={this.state.job} onChange={this.handleInputChange} />
                     </div>
                     <div className="form-group">
@@ -86,7 +86,7 @@ class CharacterForm extends React.Component {
                         <input type="level" className="form-control" autoComplete='character-level' name="level" id="level" placeholder="1" value={this.state.level} onChange={this.handleInputChange} />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="player">Character Level</label>
+                        <label htmlFor="player">Player Name</label>
                         <input type="player" className="form-control" autoComplete='player-name' name="player" id="player" placeholder="Your Name" value={this.state.player} onChange={this.handleInputChange} />
                     </div>
                     {this.renderButtons()}

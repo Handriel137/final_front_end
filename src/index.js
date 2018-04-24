@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import Authors from './components/authors';
+import Characters from './components/characters';
 // import Posts from './components/posts';
 // import PostForm from './components/post_form';
 import Home from './components/home';
@@ -20,8 +20,8 @@ ReactDOM.render(
             <Switch>
                 {/* <Route path="/authors/:id/posts/create" component={PostForm} />
                 <Route path="/authors/:id/posts/:pid" component={PostForm} />
-                <Route path="/authors/:id/posts" component={Posts} />
-                <Route path="/authors" component={Authors} /> */}
+                <Route path="/authors/:id/posts" component={Posts} /> */}
+                <Route path="/characters" component={Characters} />
                 <Route path="/about" component={About} />
                 <Route path="/" component={Home} />
             </Switch>
