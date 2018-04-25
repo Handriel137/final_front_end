@@ -75,11 +75,11 @@ class CharacterForm extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <label>Character Name</label>
-                        <input type="text" className="form-control" autoComplete='character-name' name="name" id="name" placeholder="First Name" value={this.state.name} onChange={this.handleInputChange} />
+                        <input type="text" className="form-control" autoComplete='character-name' name="name" id="name" placeholder="Character Name" value={this.state.name} onChange={this.handleInputChange} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="job">Class Name</label>
-                        <input type="text" className="form-control" autoComplete='job-name' name="job" id="job" placeholder="Last Name" value={this.state.job} onChange={this.handleInputChange} />
+                        <input type="text" className="form-control" autoComplete='job-name' name="job" id="job" placeholder="Class Name" value={this.state.job} onChange={this.handleInputChange} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="level">Character Level</label>

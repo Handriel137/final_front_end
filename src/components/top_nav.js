@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Navbar, NavItem } from 'react-bootstrap';
+import { Nav, Navbar, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const TopNav = (props) => {
@@ -8,7 +8,7 @@ const TopNav = (props) => {
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <LinkContainer to="/">
+                        <LinkContainer to="/characters/1/items">
                             <a href="/"> My Inventory</a>
                         </LinkContainer>
                     </Navbar.Brand>
@@ -18,13 +18,13 @@ const TopNav = (props) => {
                     <Nav>
                         <LinkContainer to="/characters">
                             <NavItem eventKey={2}>
-                                Characters
-              </NavItem>
-                        </LinkContainer>
-                        <LinkContainer to="/about">
-                            <NavItem eventKey={3}>
-                                About
-              </NavItem>
+                                New Character
+                        </NavItem>
+                                    </LinkContainer>
+                                    <LinkContainer to="/about">
+                                        <NavItem eventKey={3}>
+                                            About
+                        </NavItem>
                         </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>

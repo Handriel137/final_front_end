@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Characters from './components/characters';
-// import Posts from './components/posts';
-// import PostForm from './components/post_form';
+import Items from './components/items';
+import ItemForm from './components/item_form';
 import Home from './components/home';
 import About from './components/about';
 import TopNav from './components/top_nav';
@@ -18,9 +18,9 @@ ReactDOM.render(
         <div>
             <TopNav />
             <Switch>
-                {/* <Route path="/authors/:id/posts/create" component={PostForm} />
-                <Route path="/authors/:id/posts/:pid" component={PostForm} />
-                <Route path="/authors/:id/posts" component={Posts} /> */}
+                <Route path="/characters/:id/items/create" component={ItemForm} />
+                <Route path="/characters/:id/items/:itemId" component={ItemForm} />
+                <Route path="/characters/:id/items" component={Items} /> 
                 <Route path="/characters" component={Characters} />
                 <Route path="/about" component={About} />
                 <Route path="/" component={Home} />
