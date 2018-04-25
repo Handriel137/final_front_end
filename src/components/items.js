@@ -43,7 +43,7 @@ class Items extends React.Component {
             .get(`${API_BASE}/characters/${this.state.character_id}/items`)
             .then(res => {
                 this.setState({ items: res.data });
-                console.log(`Data loaded! = ${this.state.items}`)
+                console.log(`Items loaded! = ${this.state.items}`)
             })
             .catch(err => console.log(err));
 
@@ -51,7 +51,7 @@ class Items extends React.Component {
             .get(`${API_BASE}/characters/${this.state.character_id}`)
             .then(res => {
                 this.setState({ character: res.data });
-                console.log(`Data loaded! = ${this.state.items}`)
+                console.log(`Characters loaded! = ${this.state.items}`)
             })
             .catch(err => console.log(err));
     }
