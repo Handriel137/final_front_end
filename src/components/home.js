@@ -4,8 +4,8 @@ import axios from 'axios';
 import leftpad from 'left-pad';
 import Select from 'react-select';
 
-const API_BASE = "http://localhost:3000/";
-// const API_BASE = "https://safe-bastion-97280.herokuapp.com/";
+// const API_BASE = "http://localhost:3000/";
+const API_BASE = "https://safe-bastion-97280.herokuapp.com/";
 
 class ActiveFormatter extends React.Component {
 
@@ -164,14 +164,10 @@ class Home extends React.Component {
               <TableHeaderColumn dataField='name' width='200' dataSort="dataSort" isKey="isKey">Item Name</TableHeaderColumn>
               <TableHeaderColumn dataField='description' width='300'>Item Description</TableHeaderColumn>
               <TableHeaderColumn dataField='rarity' width='100'>Item Rarity</TableHeaderColumn>
-              <TableHeaderColumn dataFormat={activeFormatter}>
-                Buttons
-              </TableHeaderColumn>
+              <TableHeaderColumn dataFormat={activeFormatter}>Buttons</TableHeaderColumn>
             </BootstrapTable>
 
           </tbody>
-
-          <p>{this.state.character_id_1}</p>
 
         </thead>
 
