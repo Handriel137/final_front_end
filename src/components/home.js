@@ -3,7 +3,8 @@ import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
 import axios from 'axios';
 import leftpad from 'left-pad'
 
-const API_BASE = "http://localhost:3000/";
+// const API_BASE = "http://localhost:3000/";
+const API_BASE = "https://safe-bastion-97280.herokuapp.com/";
 
 class ActiveFormatter extends React.Component {
 
