@@ -18,7 +18,7 @@ const TopNav = (props) => {
         <Nav>
           <LinkContainer to="/characters">
             <NavItem eventKey={2}>
-              New Character
+              Character List
             </NavItem>
           </LinkContainer>
           <LinkContainer to="/about">

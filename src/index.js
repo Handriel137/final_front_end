@@ -20,7 +20,7 @@ ReactDOM.render(
             <Switch>
                 <Route path="/characters/:id/items/create" component={ItemForm} />
                 <Route path="/characters/:id/items/:itemId" component={ItemForm} />
-                <Route path="/characters/:id/items" component={Items} /> 
+                <Route path="/characters/:id/items" component={Items} />
                 <Route path="/characters" component={Characters} />
                 <Route path="/about" component={About} />
                 <Route path="/" component={Home} />

@@ -1,8 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-// const API_BASE = 'http://localhost:3000/';
-const API_BASE = "https://safe-bastion-97280.herokuapp.com/";
+const API_BASE = 'http://localhost:3000/';
+// const API_BASE = "https://safe-bastion-97280.herokuapp.com/";
 const ItemItem = (props) => {
     return (
         <tr>
